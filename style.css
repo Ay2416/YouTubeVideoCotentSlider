@@ -1,0 +1,82 @@
+.swiper {
+    width: 90%;
+    height: auto;
+}
+
+/* youtubeコンテンツ用スライダー */
+.youtube_content {
+    text-align: center;
+    margin-inline: auto;
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+
+.js-swiper-slide2 img {
+    object-fit: contain;
+}
+
+.js-swiper-slide2 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.js-swiper-slide2 a:link{
+    color: black;
+}
+.js-swiper-slide2 a:visited{
+    color: black;
+}
+.js-swiper-slide2 a:hover{
+    color: black;
+}
+.js-swiper-slide2 a:active{
+    color: black;
+}
+.js-swiper-slide2 a:hover{
+    opacity: 0.5;
+}
+
+/* スライダー両側の矢印の設定 */
+.swiper-button-prev {
+    background: url(./images/swiper1.png) no-repeat center center / 300%;
+}
+
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-button-prev:hover {
+    opacity: 0.2;
+}
+
+.swiper-button-next {
+    background: url(./images/swiper2.png) no-repeat center center / 300%;
+}
+
+.swiper-button-next::after {
+    content: "";
+}
+
+.swiper-button-next:hover {
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 598px) {
+    /* youtubeコンテンツ用スライダー */
+    .youtube_content {
+        text-align: center;
+        margin-inline: auto;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* スライダー両側の矢印の設定 */
+    .swiper-button-prev {
+        background: url(./images/swiper1.png) no-repeat center center / contain;
+    } 
+    
+    .swiper-button-next {
+        background: url(./images/swiper2.png) no-repeat center center / contain;
+    }
+}
